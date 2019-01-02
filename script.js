@@ -7,7 +7,7 @@ function sidenVises() {
 }
 
 function toggleMenu() {
-    console.log("Portfolio menu vises");
+    console.log("Portfolio menu toggle");
 
     document.querySelector("#pfmenu").classList.toggle("hidden");
 }
