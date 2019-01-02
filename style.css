@@ -1,0 +1,42 @@
+body {
+    /*    margin:auto;*/
+    background-color: darkgray;
+}
+
+/* NAV */
+
+#navwrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#navpunkt {
+    flex-grow: 1;
+}
+
+#navsplit {
+    height: 15px;
+    width: 100%;
+    background-color: white;
+
+    flex-grow: 2;
+}
+
+#pfmenu {
+    text-align: right;
+    transition: transform 1s;
+}
+
+#pfmenu ul {
+    list-style: none;
+}
+
+#pfmenu li a {
+    text-decoration: none;
+}
+
+.hidden {
+    transform: translateY(-120%)
+}
