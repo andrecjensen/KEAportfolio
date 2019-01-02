@@ -1,6 +1,27 @@
 body {
-    /*    margin:auto;*/
+    margin: auto;
     background-color: darkgray;
+    /*    background-color: var(--main-blue);*/
+}
+
+:root {
+    --main-blue: #4128FF;
+}
+
+h1 {
+    font-family: 'Patua One', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: -10px;
+}
+
+h2 {}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
 }
 
 /* NAV */
@@ -12,12 +33,22 @@ body {
     flex-wrap: nowrap;
 }
 
+#navwrapper a {
+    font-family: 'Patua One', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
 #navpunkt {
+    padding: 15px;
     flex-grow: 1;
 }
 
 #navsplit {
-    height: 15px;
+    margin-top: 22px;
+    height: 16px;
     width: 100%;
     background-color: white;
 
@@ -26,17 +57,59 @@ body {
 
 #pfmenu {
     text-align: right;
-    transition: transform 1s;
+    transition: transform 0.5s;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding-right: 15px;
 }
 
 #pfmenu ul {
     list-style: none;
+    font-weight: 400;
 }
 
 #pfmenu li a {
     text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+#pfmenu .brheight {
+    line-height: 70%;
 }
 
 .hidden {
-    transform: translateY(-120%)
+    transform: translateX(+60%)
+}
+
+/* Forside */
+
+#container {
+    padding: 15px;
+    margin: auto;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.button {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+
+    padding: 15px 45px;
+    margin: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--main-blue);
 }
