@@ -1,12 +1,12 @@
-body {
-    margin: auto;
-    background-color: darkgray;
-    background-color: var(--main-blue);
-    overflow-x: hidden;
-}
-
 :root {
     --main-blue: #4128FF;
+    --main-bluetrans: rgba(65, 40, 255, 0.70);
+}
+
+body {
+    margin: auto;
+    background-color: var(--main-blue);
+    overflow-x: hidden;
 }
 
 h1 {
@@ -15,6 +15,7 @@ h1 {
     font-weight: 400;
     color: white;
     margin: 0;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -37,10 +38,15 @@ p {
     font-weight: 400;
     font-size: 14px;
     color: white;
+    margin-top: 0px;
 }
 
 img {
     width: 100%;
+}
+
+.shadow {
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* NAV */
@@ -81,7 +87,9 @@ nav {
 #pfmenu {
     top: 60px;
     right: 0px;
-    width: 300px;
+    width: 230px;
+    background-color: var(--main-bluetrans);
+    border-bottom-left-radius: 70px;
 
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -118,7 +126,7 @@ nav {
 }
 
 .hidden {
-    transform: translateX(+80%);
+    transform: translateX(+100%);
     animation-name:
 }
 
@@ -219,6 +227,7 @@ header {
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #toolsection .tool {
@@ -249,6 +258,7 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #link_button {
