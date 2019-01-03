@@ -2,6 +2,7 @@ body {
     margin: auto;
     background-color: darkgray;
     background-color: var(--main-blue);
+    overflow-x: hidden;
 }
 
 :root {
@@ -13,8 +14,7 @@ h1 {
     font-size: 43px;
     font-weight: 400;
     color: white;
-    margin-bottom: -10px;
-    margin-top: 2px;
+    margin: 0;
 }
 
 h2 {
@@ -29,6 +29,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: white;
+    margin: 0;
 }
 
 p {
@@ -43,6 +44,10 @@ img {
 }
 
 /* NAV */
+nav {
+    position: relative;
+    /*    overflow: hidden;*/
+}
 
 #navwrapper {
     width: 100%;
@@ -74,18 +79,25 @@ img {
 }
 
 #pfmenu {
-    text-align: right;
-    transition: transform 0.5s;
+    top: 60px;
+    right: 0px;
+    width: 300px;
+
     font-family: 'Open Sans', sans-serif;
     color: white;
+    text-align: right;
+
+    transition: transform 0.5s;
+
     padding-right: 15px;
     margin-top: -15px;
+
+    position: absolute;
 }
 
 #pfmenu ul {
     list-style: none;
     font-weight: 400;
-
 }
 
 #pfmenu li a {
@@ -106,7 +118,8 @@ img {
 }
 
 .hidden {
-    transform: translateX(+60%)
+    transform: translateX(+80%);
+    animation-name:
 }
 
 /* Forside */
@@ -115,6 +128,13 @@ img {
     padding: 15px;
     margin: auto;
     max-width: 900px;
+    z-index: 0;
+    position: relative;
+}
+
+header {
+    z-index: 1;
+    position: relative;
 }
 
 #vitae_button {
@@ -157,6 +177,18 @@ img {
     padding-left: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+    #portfolio_title {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #portfolio_title .column_wide {
+        padding-left: 0px;
+    }
+
+}
+
 /* Sectionwrapper */
 
 #sectionwrapper {
@@ -164,7 +196,14 @@ img {
     flex-direction: row;
 }
 
-/* Tre kolonner section */
+@media only screen and (max-width: 600px) {
+    #sectionwrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* kolonne */
 
 #sectionwrapper .column {
     flex-grow: 1;
