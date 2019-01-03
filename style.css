@@ -1,7 +1,7 @@
 body {
     margin: auto;
     background-color: darkgray;
-    /*    background-color: var(--main-blue);*/
+    background-color: var(--main-blue);
 }
 
 :root {
@@ -17,7 +17,13 @@ h1 {
     margin-top: 2px;
 }
 
-h2 {}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
 
 h3 {
     font-family: 'Open Sans', sans-serif;
@@ -73,17 +79,26 @@ img {
     font-family: 'Open Sans', sans-serif;
     color: white;
     padding-right: 15px;
+    margin-top: -15px;
 }
 
 #pfmenu ul {
     list-style: none;
     font-weight: 400;
+
 }
 
 #pfmenu li a {
     text-decoration: none;
     font-weight: 700;
     color: white;
+}
+
+#pfmenu li a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: white;
+
 }
 
 #pfmenu .brheight {
@@ -100,16 +115,16 @@ img {
     padding: 15px;
     margin: auto;
     max-width: 900px;
-    background-color: rgba(255, 255, 255, 0.13);
 }
 
-.button {
+#vitae_button {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: white;
 
     padding: 15px 45px;
     margin: 15px;
+
     position: absolute;
     right: 0;
     bottom: 0;
@@ -121,7 +136,7 @@ img {
     transition-duration: 0.4s;
 }
 
-.button:hover {
+#vitae_button:hover {
     background-color: white;
     color: var(--main-blue);
 }
@@ -140,4 +155,79 @@ img {
 #portfolio_title .column_wide {
     flex-grow: 2;
     padding-left: 15px;
+}
+
+/* Sectionwrapper */
+
+#sectionwrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Tre kolonner section */
+
+#sectionwrapper .column {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+/* Værktøjssection */
+
+#toolsection {
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+#toolsection .tool {
+    height: 50px;
+    width: 50px;
+    position: relative;
+
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 50px;
+    margin: 10px;
+
+}
+
+#toolsection .tool img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    left: 50%;
+    margin-left: -16px;
+}
+
+/* Link knap */
+
+#link-knap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#link_button {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+
+    padding: 15px 45px;
+    margin: 15px;
+
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+
+    transition-duration: 0.4s;
+}
+
+#link_button:hover {
+    background-color: white;
+    color: var(--main-blue);
 }
