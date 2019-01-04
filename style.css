@@ -229,13 +229,12 @@ nav {
     }
 
     #portfolio_title .column_narrow {
-        padding: 5px;
+        padding: 10px;
     }
 
     #portfolio_title .column_wide {
-        padding-left: 5px;
+        padding-left: 10px;
     }
-
 }
 
 /* Sectionwrapper */
