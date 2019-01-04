@@ -4,7 +4,7 @@
 }
 
 body {
-    margin: auto;
+    margin: 15px;
     background-color: var(--main-blue);
     overflow-x: hidden;
 }
@@ -44,10 +44,16 @@ h4 {
     margin-bottom: 10px;
     padding: 5px 10px;
 
-    width: 110px;
-
     background-color: white;
     border-radius: 30px;
+}
+
+.gruppe {
+    width: 110px;
+}
+
+.individuel {
+    width: 138px;
 }
 
 p {
@@ -64,6 +70,12 @@ img {
 }
 
 /* NAV */
+
+header {
+    z-index: 1;
+    position: relative;
+}
+
 nav {
     position: relative;
 }
@@ -84,12 +96,11 @@ nav {
 }
 
 #navpunkt {
-    padding: 15px;
     flex-grow: 1;
 }
 
 #navsplit {
-    margin-top: 22px;
+    margin: 8px 15px 15px 15px;
     height: 16px;
     width: 100%;
     background-color: white;
@@ -101,7 +112,7 @@ nav {
     top: 60px;
     right: 0px;
     width: 230px;
-    background-color: var(--main-bluetrans);
+    background-color: var(--main-blue);
     border-bottom-left-radius: 70px;
 
     font-family: 'Open Sans', sans-serif;
@@ -110,8 +121,7 @@ nav {
 
     transition: transform 0.5s;
 
-    padding-right: 15px;
-    margin-top: -15px;
+    margin-top: -31px;
 
     position: absolute;
 }
@@ -144,19 +154,28 @@ nav {
     animation-name:
 }
 
-/* Forside */
+/* container boks der samler hele siden undtagen menu */
 
 #container {
-    padding: 15px;
+    /*    padding: 15px;*/
     margin: auto;
     max-width: 900px;
     z-index: 0;
     position: relative;
 }
 
-header {
-    z-index: 1;
-    position: relative;
+/* Forside */
+
+.profile {
+    width: 180px;
+    box-shadow: none;
+
+    display: block;
+    margin: 20% auto 10px auto;
+}
+
+.forside {
+    text-align: center;
 }
 
 #vitae_button {
@@ -210,11 +229,11 @@ header {
     }
 
     #portfolio_title .column_narrow {
-        padding: 0px;
+        padding: 5px;
     }
 
     #portfolio_title .column_wide {
-        padding-left: 0px;
+        padding-left: 5px;
     }
 
 }
@@ -224,7 +243,7 @@ header {
 #sectionwrapper {
     display: flex;
     flex-direction: row;
-    margin: 0 -5px;
+    margin: 0 -10px;
 }
 
 @media only screen and (max-width: 600px) {
