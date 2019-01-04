@@ -171,20 +171,28 @@ header {
 #portfolio_title {
     display: flex;
     flex-direction: row;
-    flex-basis: 0;
 }
 
-#portfolio_title .column_narrow {}
+#portfolio_title .column_narrow {
+    flex-basis: 0;
+    flex-grow: 3;
+    padding: 10px;
+}
 
 #portfolio_title .column_wide {
     flex-basis: 0;
-    padding-left: 15px;
+    flex-grow: 5;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 600px) {
     #portfolio_title {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    #portfolio_title .column_narrow {
+        padding: 0px;
     }
 
     #portfolio_title .column_wide {
@@ -198,6 +206,7 @@ header {
 #sectionwrapper {
     display: flex;
     flex-direction: row;
+    margin: 0 -5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -212,7 +221,26 @@ header {
 #sectionwrapper .column {
     flex-grow: 1;
     flex-basis: 0;
-    padding: 5px;
+    padding: 10px;
+}
+
+#sectionwrapper .ordboble {
+    /*    background-color: white;*/
+    border: dashed;
+    border-width: 1px;
+    border-color: white;
+    margin-bottom: 10px;
+
+    width: 100%;
+}
+
+#sectionwrapper .ordboble p {
+    text-align: center;
+    padding-top: 14px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 /* Værktøjssection */
@@ -247,6 +275,7 @@ header {
     margin-top: -18px;
     left: 50%;
     margin-left: -16px;
+    box-shadow: none;
 }
 
 /* Link knap */
