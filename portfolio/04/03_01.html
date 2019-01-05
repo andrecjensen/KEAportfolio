@@ -49,20 +49,72 @@
 
         <div class="txt">
             <h3>UX // Web Prototype</h3>
-            <h1>Fronter</h1>
+            <h1>Nyt Fronter</h1>
             <h4 class="gruppe">gruppeprojekt</h4>
-            <p>...</p>
+            <p>I grupper fik vi den opgave at lave en web prototype med KEAs fronter som case. Forinden havde vi fået den individuelle opgave at lave usability tests (brugertests) af Fronter ved at invitere tre personer til at teste platformen. Man giver testbrugeren nogle opgaver der skal gennemføres, mens brugeren bliver video- og lydoptaget undervejs. Forinden bliver brugeren orienteret om at det er platformen der testes og ikke brugeren, samt at brugeren bedes tænke højt undervejs. Det vil sige at fortælle hvad man tænker og føler. På den måde kan man se hvilke problemer, forhindringer eller forvirringer der skabes.</p>
+            <p>Ikke overraskende var der rigtig mange ulemper ved det nuværende Fronter og det leder til, at vores gruppe skulle forandre dette med en ny platform – men vi skal denne gang blot lægge ud med en web prototype, for at se om kunden vil købe det.</p>
+            <p>Vi modtog en video med kunde-feedback, som vi skulle arbejde ud fra og følge. </p>
         </div>
-        <div class="image"><img src="img/nova-optagelser.png" alt=""></div>
+        <div class="image"><img src="img/xd-prototype.png" alt=""></div>
+        <div>
+            <h2>Arbejdstruktur</h2>
+        </div>
+        <div id="sectionwrapper">
+            <div class="column">
+                <p>Til at starte med oprettede vi i gruppen et Team Canvas som vi i fælleskab udfylder. Nogle punkter skulle man skrive egne mål og forventninger. Canvaset hjælper os at komme på samme gear og have samme mål – en slags kontrakt mellem os.</p>
+                <p>Her ser i vores Team Canvas.</p>
+            </div>
+            <div class="column">
+                <img src="img/TeamCanvas-fiveguys.jpg" alt="Team Canvas FiveGuys">
+            </div>
+        </div>
 
+
+        <h2>Udvalgt kodning</h2>
+
+        <div id="sectionwrapper">
+            <div class="column">
+                <img src="img/2phzni.gif" alt="Slide in menu">
+            </div>
+
+            <div class="column">
+                <p>Jeg vil gerne uddybe kodningsdelen ifm. slide-in menu, som jeg har skrevet. Jeg fandt denne brugbare side på <a href="https://www.w3schools.com/howto/howto_js_sidenav.asp">W3Schools</a>, som jeg kopierede og redigere til så det passede til vores navigation som blev lavet i Adobe XD. </p>
+                <p>At udvikle dette krævede at man brugte både html, css og javascript. Det var et bevidst valg, da opgaven også krævede at man brugte alle 3 dele – men det var faktisk til min fordel, da jeg anser det er nemmest at arbejde på tværs af disse dele. De gav mig frirum til at tilpasse det efter vores forventninger. Se kodningsdelen herunder.</p>
+            </div>
+        </div>
+        <p>HTML</p>
+        <img src="img/nav-html.png" alt="">
+        <div class="txt">
+            <p>I html selve menuen er der delt op i tre wrappere i en container med id’en “myNav”. De tre wrapper indeholder profil-felt (personlig felt), selve menuen og så log ud knap. </p>
+            <p>
+                I HTML’en er der sørget for hvad der står i de respektive menu-punkter.
+                Om burger- og lukke-knappen er der opsat sådan, at hvis man klikker på dem så aktiverer man henholdsvis openNav() og closeNav() i javascriptet. </p>
+            <p>
+                Som ikoner bruges der FontAwesome som er en gratis skrifttype bestående af symboler. Den importeres via link rel i header.
+            </p>
+        </div>
+        <p>CSS</p>
+        <div id="sectionwrapper">
+            <div class="column"><img src="img/nav-css1.png" alt=""></div>
+            <div class="column"><img src="img/nav-css2.png" alt=""></div>
+        </div>
+        <div class="txt">
+            <p>I CSS delen har jeg angivet de 3 wrapper til at flexe, samt angivet farver og størrelser. Da vi skulle arbejde mobilefrist/only, så er der kun taget højde for mobile bredder. Der er også setup for animation for selve boksen, som giver den slide right funktion.
+            </p>
+        </div>
+        <p>Javascript</p>
+        <img src="img/nav-javascript.png" alt="">
+        <div class="txt">
+            <p>Javascriptet er ret simpel. Når funktionen openNav er aktiveret giver den myNav en bredde på 80%. 0% gives når closeNav aktiveres.
+            </p>
+        </div>
 
         <div id="link-knap">
-            <a href="http://www.firehill.dk/kea/04-ux/fiveguys-master/landing.html?" id="link_button">Web Prototype</a>
+            <a href="https://xd.adobe.com/view/70047032-d537-4577-425f-ae5a4ec6873e-0635/?fbclid=IwAR3fp-2omGwlu1ZYEwAzUsL7Q2ozwj_mJOlR1D7cmT2JYIn59J0uFe7KlV0" id="link_button">XD Prototypen</a>
+            <a href="http://www.firehill.dk/kea/04-ux/fiveguys-master/landing.html?" id="link_button">Web Prototyp</a>
         </div>
 
-        <div>
-            <h2>Anvendte værktøjer</h2>
-        </div>
+        <h2>Anvendte værktøjer</h2>
         <div id="toolsection">
             <div class="tool"><img src="../../icon/ps-ikon.svg" alt=""></div>
             <div class="tool"><img src="../../icon/ps-ikon.svg" alt=""></div>

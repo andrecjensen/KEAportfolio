@@ -1,6 +1,6 @@
 :root {
     --main-blue: #4128FF;
-    --main-bluetrans: rgba(65, 40, 255, 0.70);
+    /*    --main-bluetrans: rgba(65, 40, 255, 0.70);*/
 }
 
 body {
@@ -25,6 +25,8 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -46,6 +48,16 @@ h4 {
 
     background-color: white;
     border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFE128;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .gruppe {
@@ -182,6 +194,7 @@ nav {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: white;
+    font-weight: 400;
 
     padding: 15px 45px;
     margin: 15px;
@@ -348,6 +361,7 @@ nav {
 
 #link_button {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     text-decoration: none;
     color: white;
     padding: 15px 45px;
