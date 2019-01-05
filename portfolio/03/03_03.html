@@ -46,21 +46,14 @@
     </header>
 
     <div id="container">
-        <div id="portfolio_title">
-            <div class="column_narrow"><img src="img/crayxmas-udklip.png" alt=""></div>
-            <div class="column_wide">
-                <h3>Animation // Spil</h3>
-                <h1>Crayxmas</h1>
-                <h4 class="individuel">Individuel projekt</h4>
-                <p>Jeg bevægede mig som følge af en opgave ind i javascript og opdagede en hel ny univers. Et univers som tillod mig at komme frem til et ret tilfredsstillende og velfungerende spil.</p>
 
-            </div>
+        <div class="txt">
+            <h3>Animation // Spil</h3>
+            <h1>Crayxmas</h1>
+            <h4 class="individuel">Individuel projekt</h4>
+            <p>Jeg bevægede mig som følge af en opgave ind i javascript og opdagede en hel ny univers. Et univers som tillod mig at komme frem til et ret tilfredsstillende og velfungerende spil.</p>
         </div>
-
-        <div id="link-knap">
-            <a href="03_03_03_Animation_AndreJensen.pdf" id="link_button">Læs om forarbejdet</a>
-            <a href="http://www.firehill.dk/kea/03-animation/spil/index.html" id="link_button">Spil spillet</a>
-        </div>
+        <div class="image"><img src="img/crayxmas-udklip.png" alt=""></div>
 
         <div>
             <h2>Idéen kickstartes</h2>
@@ -89,7 +82,7 @@
             <h2>Skitsering</h2>
         </div>
         <div id="sectionwrapper">
-            <div class="column">
+            <div class="txt">
                 <p>Under skitseringsfasen gik jeg særlig meget op i at anvende figurdesign teorier, hvor man bruger skarpe elementer på onde figure og bløde elementer på gode figure. Herunder ses skitseringen af en farvekridt og en grødske som jeg har forsøgt at gøre levende. Samt ses du resultatet udarbejdet i Illustrator. Se flere skitser i dokumentation om forarbejdet.</p>
             </div>
         </div>
@@ -104,11 +97,17 @@
         </div>
 
         <div>
-            <h2>Sprite</h2>
+            <h2>Sprite-animation</h2>
+        </div>
+        <div class="txt">
+            <p>I stedet for en kedelig timer, tegnede jeg i stedet Nisskefaren gående mod grøden. Hvis Nisskefar var nået frem til grøden, var timeren udgået. Ved brug af animationsprincippet om at figuren skal "hoppe" op og ned mens benene går frem og tilbage, giver man figuren en naturlig måde at gå på. Der blev sørget for en konsistens volume, så figuren ikke afvigede fra sin form.</p>
+            <p>Farvekridtene, mandlen og smørret gav jeg en eksplosionseffekt som ville blive aktiveret når man klikkede på en af dem når de dukkede frem.</p>
+            <p>Hele rækken af et spritesheet blev eksporteret som én SVG-fil. Med "step()" funktion ved "animation-timing-function" i CSS'et kunne jeg tillade mig at anføre det antal af "billeder" der var på et spritesheet. Når et javascript function havde tilført en class, med animationskode, til det pågældende spritebillede så vises alle billeder enkeltvis og skaber en illusion af figurbevægelse.</p>
         </div>
         <div id="sectionwrapper">
+
             <div class="column">
-                <p>billed sprite</p>
+                <img src="img/spritesheet.jpg" alt="">
             </div>
         </div>
 
@@ -117,8 +116,30 @@
         </div>
         <div id="sectionwrapper">
             <div class="column">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum iure nulla quae unde qui consequuntur nam accusamus fugiat dolorum, magni cupiditate atque sequi. Veniam sapiente eveniet, ipsa, facere qui consequuntur.</p>
+                <p>Før vi gik i gang med at kode, lærte jeg om aktivitetsdiagrammet som jeg efterfølgende fandt meget vigtig i forhold til at give et spil mening. Et aktivitetsdiagram beskriver en aktivitet hvor der indgår handlinger/action og beslutninger/decisions. Det er en model, der er meget udbredt når man teknisk vil redegøre en interaktiv system.</p>
+                <p>Aktivitetsdiagrammet som jeg har tegnet her tager omdrejningspunkt i selve spillet. Dette giver mig også et overblik over hvad der skal kodes.</p>
             </div>
+            <div class="column">
+                <img src="img/aktivitetsdiagram.jpg" alt="">
+            </div>
+        </div>
+
+        <div>
+            <h2>State Machine Diagram</h2>
+        </div>
+        <div id="sectionwrapper">
+            <div class="column">
+                <p>Dette diagram minder om aktivitetsdiagrammet men er mere detaljeret med states – som bruges i javascript – og hvordan de er forbundet. Navnet til disse states er ikke tilfældige. De forklarer hvad der sker på hvad (stateNavn). På eksemplet her ser man f.eks. at jeg har skrevet hideStart og startGame, hvilket henholdsvis antyder at startskærmen (start) skjules og at spillet (Game) startes.</p>
+                <p>Dette værktøj anser jeg som uundgåeligt i udviklingen af større interaktiv system. For med dette har man gjort størstedelen af arbejdet, da man blot skal fortolke det ind i javascriptet uden at forsøge at kunne hele "rejsen" i hovedet.
+                </p>
+            </div>
+            <div class="column">
+                <img src="img/State%20Machine%20Diagram.jpg" alt="">
+            </div>
+        </div>
+        <div id="link-knap">
+            <a href="03_03_03_Animation_AndreJensen.pdf" id="link_button">Læs mere om forarbejdet</a>
+            <a href="http://www.firehill.dk/kea/03-animation/spil/index.html" id="link_button">Spil spillet</a>
         </div>
         <div>
             <h2>Anvendte værktøjer</h2>

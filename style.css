@@ -18,6 +18,7 @@ h1 {
     margin-bottom: 15px;
 }
 
+
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -31,7 +32,6 @@ h3 {
     font-weight: 400;
     color: white;
     margin: 0;
-    margin-top: -5px;
 }
 
 h4 {
@@ -61,12 +61,12 @@ p {
     font-weight: 400;
     font-size: 14px;
     color: white;
-    margin-top: 0px;
 }
 
 img {
     width: 100%;
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: -4px;
 }
 
 /* NAV */
@@ -202,39 +202,56 @@ nav {
     color: var(--main-blue);
 }
 
+/* Om mig */
+
+.profiltekst {
+    max-width: 480px;
+    display: block;
+
+    margin: 0px auto;
+}
+
+.profilbillede {
+    width: 200px;
+    border-radius: 100px;
+
+    display: block;
+    margin: 30px auto;
+}
+
 /* Portfolio titel sektion */
 
 #portfolio_title {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 -10px;
 }
 
-#portfolio_title .column_narrow {
+#portfolio_title .image {
     flex-basis: 0;
     flex-grow: 3;
     padding: 10px;
 }
 
-#portfolio_title .column_wide {
-    flex-basis: 0;
-    flex-grow: 5;
-    padding: 10px;
-}
-
 @media only screen and (max-width: 600px) {
-    #portfolio_title {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #portfolio_title .column_narrow {
+    #portfolio_title .image {
         padding: 10px;
     }
 
-    #portfolio_title .column_wide {
+    #portfolio_title .text {
         padding-left: 10px;
     }
+}
+
+/* Style til tekst alene i midt */
+
+.txt {
+    flex-basis: 0;
+    flex-grow: 5;
+    max-width: 480px;
+
+    display: block;
+    margin: 0 auto;
 }
 
 /* Sectionwrapper */
@@ -259,6 +276,12 @@ nav {
     flex-basis: 0;
     padding: 10px;
 }
+
+#sectionwrapper .column p {
+    margin-top: 0px;
+}
+
+
 
 #sectionwrapper .ordboble {
     /*    background-color: white;*/
