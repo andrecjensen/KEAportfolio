@@ -232,30 +232,6 @@ nav {
     margin: 30px auto;
 }
 
-/* Portfolio titel sektion */
-
-#portfolio_title {
-    display: flex;
-    flex-direction: column;
-    margin: 0 -10px;
-}
-
-#portfolio_title .image {
-    flex-basis: 0;
-    flex-grow: 3;
-    padding: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-    #portfolio_title .image {
-        padding: 10px;
-    }
-
-    #portfolio_title .text {
-        padding-left: 10px;
-    }
-}
-
 /* Style til tekst alene i midt */
 
 .txt {
