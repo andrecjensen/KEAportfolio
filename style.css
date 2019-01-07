@@ -1,11 +1,10 @@
 :root {
     --main-blue: #4128FF;
-    /*    --main-bluetrans: rgba(65, 40, 255, 0.70);*/
 }
 
 body {
-    margin: 15px;
     background-color: var(--main-blue);
+    margin: 15px;
     overflow-x: hidden;
 }
 
@@ -60,6 +59,8 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Indstillinger til definering af projekttype */
+
 .gruppe {
     width: 110px;
 }
@@ -74,6 +75,8 @@ p {
     font-size: 14px;
     color: white;
 }
+
+/* Billede indstillinger */
 
 img {
     width: 100%;
@@ -90,6 +93,7 @@ img {
 header {
     z-index: 1;
     position: relative;
+    /* Får den til at stå øverst */
 }
 
 nav {
@@ -111,23 +115,19 @@ nav {
     color: white;
 }
 
-#navpunkt {
-    flex-grow: 1;
-}
-
 #navsplit {
     margin: 8px 15px 15px 15px;
     height: 16px;
     width: 100%;
     background-color: white;
-
-    flex-grow: 2;
 }
 
 #pfmenu {
     top: 60px;
-    right: 0px;
-    width: 230px;
+    right: -15px;
+    width: 180px;
+    padding-right: 15px;
+
     background-color: var(--main-blue);
     border-bottom-left-radius: 70px;
 
@@ -138,7 +138,6 @@ nav {
     transition: transform 0.5s;
 
     margin-top: -31px;
-
     position: absolute;
 }
 
@@ -158,22 +157,19 @@ nav {
     text-decoration: underline;
     font-weight: 700;
     color: white;
-
 }
 
-#pfmenu .brheight {
-    line-height: 70%;
+#pfmenu .luftover {
+    margin-top: 10px;
 }
 
 .hidden {
     transform: translateX(+100%);
-    animation-name:
 }
 
 /* container boks der samler hele siden undtagen menu */
 
 #container {
-    /*    padding: 15px;*/
     margin: auto;
     max-width: 900px;
     z-index: 0;
@@ -182,16 +178,52 @@ nav {
 
 /* Forside */
 
+.forside {
+    text-align: center;
+
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .profile {
-    width: 180px;
+    width: 200px;
     box-shadow: none;
 
     display: block;
     margin: 20% auto 10px auto;
+
+    animation: zoom 1s;
+    -moz-animation: zoom 1s;
+    /* Firefox */
+    -webkit-animation: zoom 1s;
+    /* Safari and Chrome */
+    -o-animation: zoom 1s;
+    /* Opera */
 }
 
-.forside {
-    text-align: center;
+@keyframes zoom {
+    from {
+        width: 80px;
+    }
+
+    to {
+        width: 200px;
+    }
 }
 
 #vitae_button {
@@ -239,54 +271,44 @@ nav {
 /* Style til tekst alene i midt */
 
 .txt {
-    flex-basis: 0;
-    flex-grow: 5;
     max-width: 480px;
-
     display: block;
     margin: 0 auto;
 }
 
-/* Sectionwrapper */
+/* kolonner */
 
-#sectionwrapper {
+.sectionwrapper {
     display: flex;
     flex-direction: row;
     margin: 0 -10px;
 }
 
 @media only screen and (max-width: 600px) {
-    #sectionwrapper {
-        display: flex;
+    .sectionwrapper {
         flex-direction: column;
     }
 }
 
-/* kolonne */
-
-#sectionwrapper .column {
+.sectionwrapper .column {
     flex-grow: 1;
     flex-basis: 0;
     padding: 10px;
 }
 
-#sectionwrapper .column p {
+.sectionwrapper .column p {
     margin-top: 0px;
 }
 
-
-
-#sectionwrapper .ordboble {
-    /*    background-color: white;*/
+.sectionwrapper .ordboble {
     border: dashed;
     border-width: 1px;
     border-color: white;
     margin-bottom: 10px;
-
     width: 100%;
 }
 
-#sectionwrapper .ordboble p {
+.sectionwrapper .ordboble p {
     text-align: center;
     padding-top: 14px;
 
@@ -321,7 +343,6 @@ nav {
     border-color: white;
     border-radius: 50px;
     margin: 10px;
-
 }
 
 #toolsection .tool img {
@@ -331,15 +352,14 @@ nav {
 
 /* Link knap */
 
-#link_knap {
+.link_knap {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     text-transform: uppercase;
-
 }
 
-#link_button {
+.link_button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-decoration: none;
@@ -355,7 +375,8 @@ nav {
     transition-duration: 0.4s;
 }
 
-#link_button:hover {
+.link_button:hover {
     background-color: white;
     color: var(--main-blue);
+    text-decoration: none;
 }
