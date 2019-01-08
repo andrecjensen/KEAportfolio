@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UX // Nyt Fronter</title>
     <link rel="stylesheet" href="../../style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Patua+One" rel="stylesheet">
+    <link href="../../favicon.ico" rel="icon">
 </head>
 
 <body>
@@ -54,7 +56,7 @@
         <div class="sectionwrapper">
             <div class="column">
                 <p>Til at starte med oprettede vi i gruppen et Team Canvas som vi i fælleskab udfylder. Nogle punkter skulle man skrive egne mål og forventninger. Canvaset hjælper os at komme på samme gear og have samme mål – en slags kontrakt mellem os.</p>
-                <p>Her ser i vores Team Canvas.</p>
+                <p>Her ses vores Team Canvas.</p>
             </div>
             <div class="column">
                 <img src="img/TeamCanvas-fiveguys.jpg" alt="Team Canvas FiveGuys">
@@ -70,17 +72,17 @@
             </div>
 
             <div class="column">
-                <p>Jeg vil gerne uddybe kodningsdelen ifm. slide-in menu, som jeg har skrevet. Jeg fandt denne brugbare side på <a href="https://www.w3schools.com/howto/howto_js_sidenav.asp">W3Schools</a>, som jeg kopierede og redigere til så det passede til vores navigation som blev lavet i Adobe XD. </p>
-                <p>At udvikle dette krævede at man brugte både html, css og javascript. Det var et bevidst valg, da opgaven også krævede at man brugte alle 3 dele – men det var faktisk til min fordel, da jeg anser det er nemmest at arbejde på tværs af disse dele. De gav mig frirum til at tilpasse det efter vores forventninger. Se kodningsdelen herunder.</p>
+                <p>Jeg vil gerne uddybe kodningsdelen ifm. slide-in menu, som jeg har udviklet. Jeg fandt denne brugbare side på <a href="https://www.w3schools.com/howto/howto_js_sidenav.asp">W3Schools</a>, som jeg arbejdede ud fra og redigerede så det passede til vores navigation som blev lavet i Adobe XD. </p>
+                <p>At udvikle dette krævede at man brugte både html, css og javascript. Det var et bevidst valg, da opgaven også krævede at man brugte alle tre dele – men det var faktisk til min fordel, da jeg anser det er nemmest at arbejde på tværs af disse dele. De gav mig frirum til at tilpasse det efter vores forventninger. Se kodningsdelen herunder.</p>
             </div>
         </div>
         <p>HTML</p>
         <img src="img/nav-html.png" alt="HTML">
         <div class="txt">
-            <p>I html selve menuen er der delt op i tre wrappere i en container med id’en “myNav”. De tre wrapper indeholder profil-felt (personlig felt), selve menuen og så log ud knap. </p>
+            <p>I html er selve menuen delt op i tre wrappere i en container med id’en “myNav”. De indeholder henholdsvis profil-felt (personlig felt), selve menuen og log ud knap. </p>
             <p>
                 I HTML’en er der sørget for hvad der står i de respektive menu-punkter.
-                Om burger- og lukke-knappen er der opsat sådan, at hvis man klikker på dem så aktiverer man henholdsvis openNav() og closeNav() i javascriptet. </p>
+                Burger- og lukke-knappen er opsat sådan, at hvis man klikker på den ene af dem så aktiverer man henholdsvis openNav() og closeNav() i javascriptet. </p>
             <p>
                 Som ikoner bruges der FontAwesome som er en gratis skrifttype bestående af symboler. Den importeres via link rel i header.
             </p>
@@ -91,7 +93,7 @@
             <div class="column"><img src="img/nav-css2.png" alt="CSS 2"></div>
         </div>
         <div class="txt">
-            <p>I CSS delen har jeg angivet de 3 wrapper til at flexe, samt angivet farver og størrelser. Da vi skulle arbejde mobilefrist/only, så er der kun taget højde for mobile bredder. Der er også setup for animation for selve boksen, som giver den slide right funktion.
+            <p>I CSS delen har jeg angivet de tre wrappere til at flexe, samt angivet farver og størrelser. Da vi skulle arbejde mobilefirst/only, så er der kun taget højde for mobile bredder. Der er også setup for animation for selve boksen, som giver den slide-right funktion.
             </p>
         </div>
         <p>Javascript</p>
@@ -118,4 +120,5 @@
 
     <script src="../../script.js"></script>
 </body>
+
 </html>
