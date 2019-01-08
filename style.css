@@ -2,9 +2,16 @@
     --main-blue: #4128FF;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--main-blue);
-    margin: 15px;
+    padding: 15px;
+    margin: 55px 0 0 0;
     overflow-x: hidden;
 }
 
@@ -62,11 +69,11 @@ a:hover {
 /* Indstillinger til definering af projekttype */
 
 .gruppe {
-    width: 110px;
+    width: 129px;
 }
 
 .individuel {
-    width: 138px;
+    width: 158px;
 }
 
 p {
@@ -92,13 +99,14 @@ img {
 
 header {
     z-index: 1;
-    position: relative;
-    /* Får den til at stå øverst */
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    overflow-x: hidden;
 }
 
-nav {
-    position: relative;
-}
+nav {}
 
 #navwrapper {
     width: 100%;
@@ -123,22 +131,16 @@ nav {
 }
 
 #pfmenu {
-    top: 60px;
-    right: -15px;
-    width: 180px;
-    padding-right: 15px;
-
+    width: 195px;
+    padding-right: 0px;
     background-color: var(--main-blue);
     border-bottom-left-radius: 70px;
-
     font-family: 'Open Sans', sans-serif;
     color: white;
     text-align: right;
-
-    transition: transform 0.5s;
-
-    margin-top: -31px;
-    position: absolute;
+    transition: transform 0.3s;
+    z-index: 9999;
+    float: right;
 }
 
 #pfmenu ul {
